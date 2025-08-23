@@ -1,3 +1,5 @@
+---
+
 ## Semana 9
 
 ### Descripción de la Tarea
@@ -98,6 +100,5 @@ Finalmente, actualizar el repositorio en GitHub.
 ---
 
 ## Autor
-**José Luis Maldonado**  
-Licenciado en Ciencias de la Educación, mención en Física y Matemática.  
+**José Luis Maldonado**    
 Estudiante de Ingeniería en Tecnologías de la Información.
