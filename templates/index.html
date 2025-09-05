@@ -1,6 +1,14 @@
 {% extends "base.html" %}
 {% block title %}Inicio{% endblock %}
 {% block content %}
-<h3>Bienvenido al Proyecto Flask</h3>
-<p>Este es el sitio web de ejemplo para la materia Desarrollo de Aplicaciones Web.</p>
+<p>Bienvenido. Puedes ir al formulario para registrar un usuario:</p>
+<a href="{{ url_for('formulario') }}"><button class="btn-primary">Ir al formulario</button></a>
+<hr>
+<h3>Persistencias disponibles</h3>
+<ul>
+  <li><a href="{{ url_for('leer_txt') }}">Leer datos (TXT)</a></li>
+  <li><a href="{{ url_for('leer_json') }}">Leer datos (JSON)</a></li>
+  <li><a href="{{ url_for('leer_csv') }}">Leer datos (CSV)</a></li>
+  <li><a href="{{ url_for('listar_db') }}">Leer datos (SQLite)</a></li>
+</ul>
 {% endblock %}

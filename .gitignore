@@ -1,0 +1,20 @@
+# Entorno virtual
+venv/
+
+# Cachés de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Archivos temporales
+*.db
+*.sqlite3
+*.log
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Repositorio anidado (no debe subirse)
+mi_proyecto_flask/

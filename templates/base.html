@@ -1,25 +1,14 @@
-<!DOCTYPE html>
-<html lang="es">
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>{% block title %}Universidad Estatal Amazónica{% endblock %}</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  <meta charset="utf-8">
+  <title>{% block title %}Mi Proyecto Flask{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
-    <header>
-        <h1>Universidad Estatal Amazónica</h1>
-        <h2>Carrera: Ingeniería en Tecnologías de la Información</h2>
-        <nav>
-            <a href="{{ url_for('index') }}">Inicio</a> |
-            <a href="{{ url_for('about') }}">Acerca de</a>
-        </nav>
-    </header>
-    <main>
-        {% block content %}{% endblock %}
-    </main>
-    <footer>
-        <p>Materia: Desarrollo de Aplicaciones Web - Ciclo I 2025</p>
-        <p>Estudiante: Jose Luis Maldonado Rodriguez</p>
-    </footer>
+  <div class="container">
+    <h1>{% block header %}Mi Proyecto Flask{% endblock %}</h1>
+    {% block content %}{% endblock %}
+  </div>
 </body>
 </html>

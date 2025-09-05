@@ -1,0 +1,12 @@
+@app.route("/guardar_txt", methods=["POST"])
+def guardar_txt():
+    nombre = request.form["nombre"]
+    with open("datos/datos.txt", "a", encoding="utf-8") as f:
+        f.write(nombre + "\n")
+    return f"Se guardó en TXT: {nombre}"
+
+@app.route("/leer_txt")
+def leer_txt():
+    with open("datos/datos.txt", "r", encoding="utf-8") as f:
+        contenido = f.readlines()
+    return {"txt": [linea.strip() for linea in contenido]}
