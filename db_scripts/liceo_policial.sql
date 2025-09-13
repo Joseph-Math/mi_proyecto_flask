@@ -217,3 +217,28 @@ ALTER TABLE `calificaciones`
 ALTER TABLE `cursos`
   ADD CONSTRAINT `fk_cursos_profesor` FOREIGN KEY (`id_profesor`) REFERENCES `profesores` (`id_profesor`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
+=======
+-- Base de datos liceo_policial
+CREATE DATABASE IF NOT EXISTS liceo_policial;
+USE liceo_policial;
+
+-- Tabla usuarios
+CREATE TABLE IF NOT EXISTS usuarios (
+    id_usuario INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL,
+    mail VARCHAR(100) NOT NULL
+);
+
+-- Tabla roles
+CREATE TABLE IF NOT EXISTS roles (
+    id_rol INT AUTO_INCREMENT PRIMARY KEY,
+    nombre_rol VARCHAR(50) NOT NULL
+);
+
+-- Tabla estudiantes
+CREATE TABLE IF NOT EXISTS estudiantes (
+    id_estudiante INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL,
+    curso_id INT
+);
+>>>>>>> db1b010 (Agregar script de base de datos liceo_policial)
