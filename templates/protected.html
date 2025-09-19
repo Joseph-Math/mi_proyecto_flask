@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="card p-5 text-center">
+            <h2>Bienvenido, {{ user.nombre }} 🎉</h2>
+            <p class="lead mt-3">Has accedido a una ruta protegida.</p>
+            <a href="{{ url_for('logout') }}" class="btn btn-custom mt-4">Cerrar Sesión</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
