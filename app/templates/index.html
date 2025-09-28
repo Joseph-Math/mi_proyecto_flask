@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+  <div class="p-4 bg-light rounded">
+    <h1 class="display-6">Bienvenido</h1>
+    <p class="lead">{{ nombres.curso }}</p>
+    <hr>
+    <p>Proyecto: <strong>{{ nombres.curso }}</strong></p>
+    <p>Autor: <strong>{{ nombres.autor }}</strong></p>
+    <a href="{{ url_for('main.login') }}" class="btn btn-primary">Ingresar</a>
+  </div>
+{% endblock %}

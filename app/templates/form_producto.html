@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <h3>{{ accion }} Producto</h3>
+      <form method="post">
+        <div class="mb-3">
+          <label class="form-label">Nombre</label>
+          <input class="form-control" name="nombre" value="{{ producto.nombre if producto else '' }}" required>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Precio</label>
+          <input class="form-control" name="precio" value="{{ producto.precio if producto else '' }}" required>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Stock</label>
+          <input class="form-control" name="stock" value="{{ producto.stock if producto else 0 }}" required>
+        </div>
+        <button class="btn btn-success">{{ accion }}</button>
+        <a href="{{ url_for('main.productos') }}" class="btn btn-secondary">Cancelar</a>
+      </form>
+    </div>
+  </div>
+{% endblock %}
