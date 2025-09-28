@@ -19,7 +19,7 @@ Este proyecto es un sistema web desarrollado en Flask, con conexión a **MariaDB
 ## Tareas por Semana
 ---
 
-# Semana 15: Aplicación CRUD con Flask y MySQL
+### Semana 15: Aplicación CRUD con Flask y MySQL
 
 ## Descripción
 Ampliación del proyecto Flask de semanas anteriores, incorporando un sistema **CRUD** (Crear, Leer, Actualizar, Eliminar) conectado a una base de datos **MySQL**. Permite manipular datos desde la interfaz web de manera dinámica.  
