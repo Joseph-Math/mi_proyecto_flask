@@ -17,6 +17,34 @@ Este proyecto es un sistema web desarrollado en Flask, con conexión a **MariaDB
 ---
 
 ## Tareas por Semana
+---
+
+# Semana 15: Aplicación CRUD con Flask y MySQL
+
+## Descripción
+Ampliación del proyecto Flask de semanas anteriores, incorporando un sistema **CRUD** (Crear, Leer, Actualizar, Eliminar) conectado a una base de datos **MySQL**. Permite manipular datos desde la interfaz web de manera dinámica.  
+Se incluye el código actualizado y el **script SQL** de la base de datos.
+
+## Instrucciones y pasos realizados
+
+### 1. Configuración inicial del proyecto
+- Crear entorno virtual e instalar Flask.  
+- Crear la estructura del proyecto (`app.py`, carpetas `templates` y `static`).  
+- Definir rutas básicas y verificar el funcionamiento.  
+- Subir proyecto inicial a GitHub.
+
+### 2. Base de datos MySQL
+- Crear base de datos `desarrollo_web`.  
+- Crear tabla `productos` con campos:  
+  - `id_producto` (INT, auto incremental, PK)  
+  - `nombre` (VARCHAR)  
+  - `precio` (DECIMAL)  
+  - `stock` (INT)  
+- Instalar conector Python:  
+```bash
+pip install mysql-connector-python
+
+---
 
 ### Semana 14: Implementación de sistema de login con Flask y MySQL
 
